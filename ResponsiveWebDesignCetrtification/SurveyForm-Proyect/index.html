@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Cronologia Borges </title>
+        <title>Encuesta Objetos 2</title>
         <meta charset="UTF-8">
         <meta name="author" content="Spinelli Francisco">
         <link href="index.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Fjalla+One=swap" rel="stylesheet">
     </head>
     <body>
-        <main>
+        <main id="main">
+            <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
             <h1 id="title">Encuesta cuatrimestral de Programacion con Objetos 2</h1>
             <p id="description">Hacenos saber como podemos mejorar la materia para próximos cuatrimestres</p>
             <form id="survey-form">
@@ -21,12 +22,45 @@
                     <input type="email" id="email" name="email" placeholder="ej: franciscospinelli98@gmaail.com" required>
                 </div>
                 <div>
-                    <label for="age" id="number-label">* Edad: </label>
-                    <input type="number" id="age" name="age" min="18" max="110" required>
+                    <label for="number" id="number-label">* Edad: </label>
+                    <input type="number" id="number" name="age" min="18" max="110" placeholder="ej: 20" required>
                 </div>
                 <div>
                     <label for="dropdown">* Ocupacion: <label>
-                    <select name="dropdown" id="dropdown" required></select>
+                    <select name="dropdown" id="dropdown" required>
+                        <option selected disabled value>Elige una opcion</option> 
+                        <option value="estudiante ful-time">estudiante full-time </option>
+                        <option value="trabajo half-time"> trabajo half-time </option>
+                        <option value="trabajo full-time"> trabajo full-time </option>
+                    </select>
+                </div>
+                <div>
+                    <label for="radioButtons">* Que parte de la materia fue la que mas te gusto?</label>
+                    <ul style="list-style: none">
+                        <li><label><input type="radio" value="1" name="radio-buttoms" class="radioButtoms">Diseños usando UML</label></li>
+                        <li><label><input type="radio" value="2" name="radio-buttoms" class="radioButtoms">Principios SOLID</label></li>
+                        <li><label><input type="radio" value="3" name="radio-buttoms" class="radioButtoms">Patrones de diseño</label></li>
+                        <li><label><input type="radio" value="4" name="radio-buttoms" class="radioButtoms">Proyecto de la materia</label></li>
+                    </ul>
+                </div>
+                <div>
+                    <label for="checkboxes">* En que temas que deberiamos mejorar? 
+                        <br>
+                        (marcá todos los que consideres necesarios)
+                    </label>
+                    <ul style="list-style: none;" id="checkboxes">
+                        <li><label><input type="checkbox" value="1">Diseños usando UML</label></li>
+                        <li><label><input type="checkbox" value="2">Principios SOLID</label></li>
+                        <li><label><input type="checkbox" value="3">Patrones de Diseño</label></li>
+                        <li><label><input type="checkbox" value="1">Proyecto de la materia</label></li>
+                    </ul>
+                </div>
+                <div>
+                    <label for="comentarios">algún comentario o sugerencia que nos quieras dejar?</label>
+                    <textarea class="comentarios" placeholder="dejá aca tu comentario..."></textarea>
+                </div>
+                <div>
+                    <button type="submit" id="submit">Enviar respuestas</button>
                 </div>
             </form>
         </main>
