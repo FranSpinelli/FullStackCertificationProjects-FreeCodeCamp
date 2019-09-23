@@ -1,6 +1,7 @@
 #main{
     font-family: 'Raleway', sans-serif;
     background-color: #AED6F1;
+    padding: 0 0 0.5% 0;
 }
 
 #title, #description{
@@ -11,6 +12,11 @@
     --inputs-margin: 3%;
     --input-width: 65%;
     --input-height: 25px;
+    background-color: white;
+    margin: 0% 10% 2% 10%;
+    border-radius: 5%;
+    padding: 2%;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
 .div-row{
