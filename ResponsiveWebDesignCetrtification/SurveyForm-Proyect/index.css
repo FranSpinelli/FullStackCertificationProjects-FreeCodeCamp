@@ -1,0 +1,39 @@
+#survey-form{
+    --inputs-margin: 3%;
+    --input-width: 65%;
+    --input-height: 25px;
+}
+
+.div-row{
+    text-align: center;
+}
+
+.div-labels-section{
+    display: inline-block;
+    text-align: right;
+    width: 40%;
+}
+
+.div-right{
+    display: inline-block;
+    text-align: left;
+    width: 48%;
+}
+
+#name{
+    margin: var(--inputs-margin);
+    width: var(--input-width);
+    height: var(--input-height);
+}
+
+#email{
+    margin: var(--inputs-margin);
+    width: var(--input-width);
+    height: var(--input-height);
+}
+
+#number{
+    margin: var(--inputs-margin);
+    width: var(--input-width);
+    height: var(--input-height);
+}
