@@ -84,3 +84,23 @@
     margin: 10px;
     border: 0px solid;
 }
+
+@media (max-width: 520px) {
+
+    .div-right, .div-labels-section{
+        display: block;
+        text-align: justify;
+    }
+
+    .div-right {
+        width: 120%;
+    }
+
+    .div-row{
+        width: 100%;
+    }
+
+    #ul-for-responsive, #checkboxes{
+        padding: 0;
+    }
+}
