@@ -22,6 +22,9 @@ h3{
     top: 0;
     left: 0;
 }
+body{
+    background-color: #D6EAF8;
+}
   
 #header-img{
     width: 100px;
@@ -36,6 +39,14 @@ nav ul{
   
 #nav-bar{
     width: 100%;
+}
+
+.nav-link{
+    text-decoration: none;
+}
+
+#primera-seccion{
+    margin-top: 120px;
 }
 
 .seccion{
@@ -134,18 +145,65 @@ div ol{
     animation-duration: 700ms;
     animation-fill-mode: forwards;
 }
-    @keyframes background-color {
-        100% {
-            background-color: #F39C12;
-        }   
-    }
+
+@keyframes background-color {
+    100% {
+        background-color: #F39C12;
+    }   
 }
 
 ol li{
     margin: 8px 0;
 }
 
-/*#video{
-    width: 100%;
-    height: auto;
-}*/
+footer{
+    background-color: #B3B6B7;
+    margin: 0 4%;
+    padding: 1% 2%;
+}
+
+.footer-list{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    margin: 0;
+}
+
+footer ul li{
+    margin: 0 0.5%;
+}
+
+.link-footer{
+    text-decoration: none;
+    color: #17202A;
+}
+
+span{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 14px;
+    margin-top: 1%;
+}
+
+@media only screen and (max-width: 610px) {
+    #primera-seccion{margin-top: 240px;}
+
+    #video{
+        width: 100%;
+        height: auto;
+    }
+
+    #header{flex-direction: column;}
+
+    nav ul li{margin: 1% 0;}
+
+    nav ul{flex-direction: column;}
+
+    .prices-container{flex-direction: column;}
+
+    .ball-container{
+        width: 100%;
+        max-width: 300px;
+        margin: 2% auto 4% auto;
+    }
+}
