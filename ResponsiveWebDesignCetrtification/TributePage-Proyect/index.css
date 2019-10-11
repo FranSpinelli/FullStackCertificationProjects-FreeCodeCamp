@@ -51,7 +51,7 @@ li{
     text-align: justify;
 }
 
-@media (max-device-width: 425px) {
+@media (max-device-width: 425px), (max-width: 610px)  {
     
     li{ 
         margin: 6% 0;

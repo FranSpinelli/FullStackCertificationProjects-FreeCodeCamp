@@ -185,7 +185,7 @@ span{
     margin-top: 1%;
 }
 
-@media only screen and (max-device-width: 610px) {
+@media (max-width: 610px) {
     #primera-seccion{margin-top: 240px;}
 
     #video{
@@ -206,4 +206,24 @@ span{
         max-width: 300px;
         margin: 2% auto 4% auto;
     }
+}
+
+@media (max-device-width: 610px){
+    #primera-seccion{margin-top: 240px;}
+
+    .nav-link{font-size: ;}
+
+    #header{flex-direction: column;}
+
+    nav ul li{margin: 1% 0;}
+
+    nav ul{flex-direction: column;}
+
+    .prices-container{flex-direction: column;}
+
+    .ball-container{
+        width: 100%;
+        max-width: 300px;
+        margin: 2% auto 4% auto;
+    } 
 }
