@@ -1,4 +1,5 @@
-main{
+body{
+    background-color: #D6EAF8;
     font-family: 'Raleway';
     font-size: 16px;
 }
@@ -21,9 +22,6 @@ h3{
     background-color: #ffffff;
     top: 0;
     left: 0;
-}
-body{
-    background-color: #D6EAF8;
 }
   
 #header-img{
@@ -209,9 +207,9 @@ span{
 }
 
 @media (max-device-width: 610px){
-    #primera-seccion{margin-top: 240px;}
+    body{font-size: 2vmin;}
 
-    .nav-link{font-size: ;}
+    #primera-seccion{margin-top: 440px;}
 
     #header{flex-direction: column;}
 
@@ -225,5 +223,16 @@ span{
         width: 100%;
         max-width: 300px;
         margin: 2% auto 4% auto;
-    } 
+    }
+
+    /*especificaciones de letra*/
+    .nav-link{font-size: 3em;}
+    .caract-title{font-size: 3em;}
+    h2{font-size: 4em;}
+    .caract-desc{font-size: 2em;}
+    .ball-title{font-size: 3em;}
+    h4{font-size: 2em;}
+    ol li{font-size: 2em;}
+    .link-footer{font-size: 2em;}
+    span{font-size: 2em;}
 }
