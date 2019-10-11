@@ -1,17 +1,17 @@
 body{
     background-color: #D6EAF8;
     font-family: 'Raleway';
-    font-size: 16px;
+    font-size: 18px;
 }
 
 h2{
     font-family: 'Roboto';
-    font-size: 24px;
+    font-size: 32px;
     margin: 2% 0;
 }
 
 h3{
-    font-size: 18px;
+    font-size: 24px;
 }
 
 #header{
@@ -63,7 +63,7 @@ nav ul{
 
 #email{
     width: 25%;
-    height: 20px;
+    height: 30px;
     padding: 2px;
 }
 
@@ -223,6 +223,18 @@ span{
         width: 100%;
         max-width: 700px;
         margin: 2% auto 4% auto;
+    }
+
+    #email{
+        font-size: 2em;
+        height: 3em;
+        width: auto;
+    }
+
+    #submit{
+        font-size: 3em;
+        height: 1.5em;
+        width: auto;
     }
 
     /*especificaciones de letra*/
