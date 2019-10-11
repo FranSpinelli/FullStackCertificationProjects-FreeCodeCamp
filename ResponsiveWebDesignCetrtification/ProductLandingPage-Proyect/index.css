@@ -237,6 +237,12 @@ span{
         width: auto;
     }
 
+    .submit{
+        font-size: 3em;
+        height: 1.5em;
+        width: auto;
+    }
+
     /*especificaciones de letra*/
     .nav-link{font-size: 3em;}
     .caract-title{font-size: 3em;}
