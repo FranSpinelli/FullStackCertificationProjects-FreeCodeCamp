@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Java Basics</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="Spinelli Francisco">
+        <link rel="icon" type="image/png" href="java.png">
+        <link href="index.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+        <nav id="navbar">
+            <header id="nav-header">Programacíon Orientada a Objetos</header>
+            <ul id="nav-ul">
+                <li class="nav-li"><a class="nav-link" href="#Introduccíon">Introduccíon</a></li>
+                <li class="nav-li"><a class="nav-link" href="#Objetos_y_Clases">Objetos y Clases</a></li>
+                <li class="nav-li"><a class="nav-link" href="#Variables">Variables</a></li>
+                <li class="nav-li"><a class="nav-link" href="#Metodos">Metodos</a></li>
+                <li class="nav-li" id="nav-li-last"><a class="nav-link" href="#Herencia">Herencia</a></li>
+            </ul>
+        </nav>
+        <main id="main-doc">
+            <section class="main-section" id="Introduccíon">
+                <header class="section-header">Introduccíon</header>
+                <article class="section-article">
+                    <p>
+                        El paradigma de programacíon orientado a objetos, es una 
+                        metodología de desarrollo de aplicaciones en la cual éstas se
+                        organizan como colecciones cooperativas de objetos, cada uno
+                        de los cuales representan una instancia de alguna clase, y
+                        cuyas clases son miembros de jerarquías de clases unidas
+                        mediante relaciones de herencia.
+                    </p>
+                    <p>
+                        Este paradigma, se ha convertido durante las pasadas dos décadas en el
+                        paradigma de programación dominante, esto se debe a diversas razones, entre ellas:
+                        <ul>
+                            <li>Es un paradigma que tiene mucha escalabilidad, es decir, expandir el dominio del programa,
+                                es mas facil con respecto a otros paradigmas.
+                            </li>
+                            <li>Proporciona un modelo de abstracción que razona con
+                                técnicas que la gente usa para resolver problemas .
+                            </li>
+                            <li>Gran desarrollo de herramientas (IDEs, librerías, Frameworks,…) en todos los dominios.</li>
+                        </ul>
+                    </p>
+                </article>
+            </section>
+            <section class="main-section" id="Objetos_y_Clases">
+                <header class="section-header">Objetos y Clases</header>
+                <article class="section-article">
+                    <p>
+                        Se trata de un ente abstracto usado en programación que permite separar los diferentes componentes 
+                        de un programa, simplificando así su elaboración, depuración y posteriores mejoras.
+                        Los objetos integran, a diferencia de los métodos procedurales, tanto los procedimientos como las 
+                        variables y datos referentes al objeto.
+                        A los objetos se les otorga ciertas características en la vida real. Cada parte del programa que 
+                        se desea realizar es tratado como objeto, siendo así estas partes independientes las unas de las otras. 
+                        Los objetos se componen de 3 partes fundamentales: metodos, eventos y atributos.
+                    </p>
+                    <p>
+                        Por otro lado, <strong>las clases</strong> son la descripción de un objeto. Consta de una serie de métodos y datos que resumen 
+                        las características de este objeto. Definir clases permite trabajar con código reutilizable. Puesto que desde 
+                        una clase se puede crear una instancia y así reutilizar el código escrito para esta si tener que volver a escribir 
+                        el código para la instancia. La instancia toma el patrón de la clase padre. Sin embargo, las variables son idependientes.
+                    </p>
+                    <p>
+                        Ejemplo de declaracion de una clase en java:
+                        <code class="codigo">public class Perro{ // variables de instancia (veremos que son mas adelante)
+                                private String nombre;
+                                private String color; 
+                              
+                                //declaracion del constructor de la clase 
+                                public Perro(String unNombre, String unColor){ 
+                                    this.nombre = unNombre; 
+                                    this.color = unColor; 
+                                } 
+                              
+                                // metodo 1 (veremos que son mas adelante)
+                                public String getNombre(){ 
+                                    return this.nombre; 
+                                }
+                              
+                                // method 2 
+                                public String getColor(){ 
+                                    return this.color; 
+                                } 
+                        </code>
+                    </p>
+                </article>
+            </section>
+            <section class="main-section" id="Variables">
+                <header class="section-header">Variables</header>
+                <article class="section-article">
+                    <p>
+                        Una variable, en Java, es un identificador que representa un espacio de memoria que contiene información. 
+                        La información es del tipo con que se declaro la variable. Hay 2 categorías de tipos para variables, los tipos primitivos, 
+                        como:
+                        <ul>
+                            <li>int</li>
+                            <li>short</li>
+                            <li>byte</li> 
+                            <li>long</li> 
+                            <li>char</li> 
+                            <li>boolen</li>
+                            <li>double</li>
+                        </ul> 
+                        y las referencias a objetos, algunos serian:
+                        <ul>
+                            <li>Array</li>
+                            <li>List</li>
+                            <li>Set</li>
+                            <li>String</li>
+                        </ul>
+                    </p>
+                    <p>
+                        Cabe destacar, que en java, existen 3 tipos de variables(de instancia, de clase y Locales), en esta guia nos enfocamos en las
+                        de instancia; estas se usan para guardar los atributos de un objeto particular. 
+                    </p>
+                    <p>
+                        Ejemplo de declaracion de variabes de instancias privada:
+                        <code class="codigo">private String nombre;
+                            private String colorl
+                        </code>
+                    </p>
+                    <p>
+                        Ejemplo de declaracion de variable de instancia publica:
+                        <code class="codigo">Integer edad;
+                        </code>
+                    </p>
+                </article>
+            </section>
+            <section class="main-section" id="Metodos">
+                <header class="section-header">Metodos</header>
+                <article class="section-article">
+                    <p>
+                        Un método en Java es un conjunto de instrucciones definidas dentro de una clase, que realizan una determinada tarea 
+                        y a las que podemos invocar mediante un nombre. 
+                        <br>
+                        Cuando se llama a un método, la ejecución del programa pasa al método y cuando éste acaba, la ejecución continúa a partir 
+                        del punto donde se produjo la llamada.
+
+                    </p>
+                    <p>
+                        Utilizando métodos:
+                        <ul>
+                            <li> Se construyen programas modulares.</li>
+                            <li> Se consigue la reutilización de código. En lugar de escribir el mismo código repetido cuando se necesite, 
+                                por ejemplo para validar una fecha, se hace una llamada al método que lo realiza.
+                            </li>
+                        </ul>
+                        En Java un método siempre pertenece a una clase. 
+                    </p>
+                    <p>
+                        Ejemplo de declaracion de metodos en java:
+                        <code class="codigo">public class Perro{ 
+                                
+                                ...
+                                  
+                                // metodo 1
+                                //notar que este metodo retorna un string en este caso perteneciente a la variable nombre
+                                //ademas, nombre tiene que ser de tipo string, sino noo compila
+                                public String getNombre(){ 
+                                    return this.nombre;
+                                }
+                                  
+                                // method 2 
+                                //el tipo void, hace referencia a que este metodo no retorna nada, en cambio, realiza una accion
+                                public void setNombre(Strin nuevoNombre){ 
+                                    this.nombre = nuevoNombre; 
+                                } 
+                        </code>
+                    </p>
+                </article>
+            </section>
+            <section class="main-section" id="Herencia">
+                <header class="section-header">Herencia</header>
+                <article class="section-article">
+                    <p>
+                        Mecanismo para compartir automáticamente métodos y datos entre classes, subclases y objetos.
+                        Permite crear nuevas clases introduciendo las variaciones con respecto a su clase padre.
+                        <br>
+                        En esta guia nos enfocaremos mas especificamente a la herencia  simple, esta se refiere a que una subclase puede herecar datos 
+                        y métodos de una clase simple así como añadir o sustraer ciertos comportamientos.
+                    </p>
+                    <code class="codigo">public class Rectangulo{
+                        
+                            private Integer altura;
+                            private Integer base;
+
+                            Public Rectangulo(Integer altura){
+                                this.altura = altura;
+                                this.base = altura * 2;
+                            }
+
+                            public Double area(){
+                                return base*altura
+                            }
+                        }
+
+                        public class Cuadrado extends Rectangulo{
+                        
+                            //se define otro constructor pero utiliza las mismas variables que su super clase
+                            public Cuadrado(Int lado){
+                                this.altura = lado;
+                                this.base = lado;
+                        }
+
+                            //La clase cuadrado podra hacer uso del metodo area() definido en rectangulo
+                        }
+                    </code>
+                </article>
+            </section>
+        </main>
+    </body>
+</html>
