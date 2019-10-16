@@ -1,0 +1,197 @@
+#projects{
+    height: 100vh;
+    padding-top: 7%;
+    background-color:#154360;
+}
+
+#projects h2{
+    display: block;
+    width: 27%;
+    margin: auto;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 2em;
+    border-bottom: solid 3px;
+    color: #ffffff;
+}
+
+#project-grid{
+    margin-top: 10%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.project-tile{
+    text-decoration: none;
+    font-size: 1.5em;
+    display: block;
+    background-color: #212F3C;
+    color: #ffffff;
+    text-align: center;
+}
+
+#contact{
+    height: 50vh;
+    padding-top: 5%;
+    background-color: #212F3C;
+}
+
+#tittle-div h2{
+    font-family: 'Roboto';
+    font-size: 4em;
+    color: #ffffff;
+    text-align: center;
+}
+
+#tittle-div p{
+    text-align: center;
+    color: #ffffff;
+    font-size: 1.5em;
+}
+
+#contact-list-div{
+    margin-top: 6%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.link{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 2.5em;
+}
+
+#footer{
+    background-color: #212F3C;
+    border-top: solid 6px #CD6155;
+    padding: 3% 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#footer p{
+    margin: 0;
+    display: block;
+    color: #ffffff;
+    font-size: 1.5em;
+}
+
+#footer-link{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+@media (max-width: 500px){
+    #navbar ul{
+        flex-direction: column;
+    }
+
+    #welcome-section{
+        padding-top: 50%;
+    }
+
+    #contact-list-div{
+        flex-direction: column;
+        text-align: center;
+    }
+
+
+    #footer{
+        flex-direction: column;
+    }
+
+    #footer p{
+        margin-top: 4%;
+    }
+
+    #contact{
+        padding-bottom: 5%;
+    }
+
+    #projects h2{
+        border-bottom: none;
+    }
+
+    #project-grid{
+        grid-template-columns: repeat(1, minmax(120px, 1fr));
+        
+    }
+
+}
+
+@media (max-device-width: 500px){
+    /*-----RELACIONADO A FONT-SIZE----*/
+    #navbar ul{
+        flex-direction: column;
+    }
+
+    .nav-li a{
+        font-size: 70px;
+    }
+
+    h1{
+        font-size: 100px;
+    }
+    
+    #welcome-section p{
+        font-size: 50px;
+    }
+
+    #projects h2{
+        font-size: 80px;   
+    }
+
+    .project-tile{
+        font-size: 40px;
+    }
+
+    #tittle-div h2{
+        font-size: 80px;  
+    }
+    
+    #tittle-div p{
+        font-size: 60px;
+    }
+    
+    .link{
+        font-size: 60px;
+    }
+
+    #footer p{
+        font-size: 35px;
+    }
+/*--------------------------------------------------*/
+    #welcome-section{
+        padding-top: 50%;
+    }
+
+    #contact-list-div{
+        flex-direction: column;
+        text-align: center;
+    }
+
+
+    #footer{
+        flex-direction: column;
+    }
+
+    #footer p{
+        margin-top: 4%;
+    }
+
+    #contact{
+        padding-bottom: 5%;
+    }
+
+    #projects h2{
+        border-bottom: none;
+    }
+
+    #project-grid{
+        grid-template-columns: repeat(1, minmax(120px, 1fr));
+        
+    }
+
+}
