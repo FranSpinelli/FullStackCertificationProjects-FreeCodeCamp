@@ -39,9 +39,16 @@ body{
 }
   
 #welcome-section{
-    padding-top: 25%;
+    padding-top: 0px;
+    margin-top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     height: 100vh;
     background-color: #212F3C;
+
+
 }
 
 h1{
